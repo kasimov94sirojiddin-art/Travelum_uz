@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Stylized Uzbekistan journey with domes, mountains, and road">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d8eef2"/>
+      <stop offset="0.52" stop-color="#f7f0d4"/>
+      <stop offset="1" stop-color="#f8d6c8"/>
+    </linearGradient>
+    <linearGradient id="dome" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#12a6a1"/>
+      <stop offset="1" stop-color="#095b58"/>
+    </linearGradient>
+    <linearGradient id="road" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#f4f0df"/>
+      <stop offset="1" stop-color="#d2b16d"/>
+    </linearGradient>
+    <pattern id="tile" width="38" height="38" patternUnits="userSpaceOnUse">
+      <path d="M19 2l17 17-17 17L2 19z" fill="none" stroke="#ffffff" stroke-opacity=".34" stroke-width="3"/>
+      <circle cx="19" cy="19" r="4" fill="#ffffff" fill-opacity=".26"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="900" fill="url(#sky)"/>
+  <circle cx="920" cy="150" r="84" fill="#fff8d8" opacity=".9"/>
+  <path d="M0 432c150-98 252-122 402-62 108 43 174 76 292 28 159-65 325-82 506 14v488H0z" fill="#90aa77" opacity=".62"/>
+  <path d="M0 476c170-110 324-116 492-25 130 70 254 38 360 2 119-40 220-25 348 64v383H0z" fill="#3f7867" opacity=".84"/>
+  <path d="M770 310l132-142 145 171 83-92 122 155H645z" fill="#f6f3e8" opacity=".9"/>
+  <path d="M746 330l156-162 145 171 83-92 166 210H590z" fill="#7a987f" opacity=".75"/>
+  <path d="M565 450c58-72 140-111 234-111 109 0 207 54 265 136 48 69 66 154 64 251H469c-5-103 27-200 96-276z" fill="#f6f0dc"/>
+  <path d="M593 451c48-58 119-91 204-91 97 0 184 48 235 119 39 55 56 124 56 203H507c-4-89 26-174 86-231z" fill="url(#dome)"/>
+  <path d="M507 682h581v105H507z" fill="#f7f0dc"/>
+  <path d="M527 704h541v60H527z" fill="url(#tile)" opacity=".9"/>
+  <path d="M714 682V538c0-44 36-80 80-80s80 36 80 80v144z" fill="#f8f1dd"/>
+  <path d="M744 682V548c0-27 22-49 50-49s50 22 50 49v134z" fill="#0b5d59"/>
+  <path d="M640 682v-84c0-32 26-58 58-58s58 26 58 58v84z" fill="#e4c26f"/>
+  <path d="M912 682v-84c0-32 26-58 58-58s58 26 58 58v84z" fill="#e4c26f"/>
+  <path d="M130 625c142 40 247 46 356 19 102-25 187-28 274 18 84 45 183 62 310 30v208H130z" fill="#0f766e" opacity=".18"/>
+  <path d="M661 900c6-125 19-214 51-288 20-46 50-71 85-71 36 0 66 26 86 73 31 72 44 160 50 286z" fill="url(#road)"/>
+  <path d="M792 590c-10 74-14 180-9 310" fill="none" stroke="#fff9e9" stroke-width="10" stroke-dasharray="30 32" opacity=".9"/>
+  <path d="M0 766c118-35 244-42 378-14 146 31 278 25 397-18 147-54 284-49 425 22v144H0z" fill="#f7faf6"/>
+  <g opacity=".88">
+    <rect x="196" y="574" width="98" height="160" rx="8" fill="#f3e3be"/>
+    <path d="M196 574h98v-58l-49-40-49 40z" fill="#d95f4b"/>
+    <rect x="222" y="632" width="46" height="102" rx="23" fill="#0a5f5a"/>
+    <rect x="333" y="538" width="78" height="184" rx="7" fill="#f3e3be"/>
+    <path d="M333 538h78v-48l-39-34-39 34z" fill="#c58c2c"/>
+    <rect x="352" y="610" width="40" height="112" rx="20" fill="#0a5f5a"/>
+  </g>
+</svg>
