@@ -1,0 +1,10 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Tours | Travelum uz</title><meta name="description" content="Samarkand, Bukhara and mountain day trips from Tashkent with a live price calculator."><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body data-page="tours" id="top"><main>
+<section class="band"><div class="wrap"><h1>Tours</h1><p class="sub">Choose a trip and group size. The price updates instantly.</p></div></section>
+<section class="wrap"><div class="calc"><div><label for="c-tour">Tour</label><select id="c-tour"></select>
+<label style="margin-top:1rem">Number of people</label><div class="step"><button id="c-minus" aria-label="Fewer">−</button><span id="c-n">2</span><button id="c-plus" aria-label="More">+</button></div>
+<input type="range" id="c-r" min="1" max="10" aria-label="Number of people"></div>
+<div><div id="c-total" aria-live="polite"></div><a class="btn" id="c-book" href="#" target="_blank" rel="noreferrer">Book this on WhatsApp</a>
+<p class="note">For group sizes without a listed price, the next listed tier is used. We confirm the final price in WhatsApp.</p></div></div></section>
+<section class="wrap" style="padding-top:0"><div class="stack" id="tours"></div></section>
+
+</main><script src="data.js"></script><script src="app.js"></script></body></html>
