@@ -24,15 +24,15 @@ const WALK=[
 ["Kokand","Khudoyar-Khan Palace, Regional Studies Museum, Jami Mosque, Kamol-Kazy and Norbutabiy Madrasahs.",1],
 ["Shakhrisabz","Dorus Saodat, Dor-ut Tilovat & Kok-Gumbaz Mosque, Ak-Saray Palace ruins.",1],
 ["Termez","Kokildor-Ota Khanaka, Kyrk-Kyz, Sultan Saodat, Archaeology Museum, Kara-Tepe & Fayaz-Tepe, Al-Hakim at-Termezi, Zurmala stupa.",1]];
-// 
+ 
 const REVIEWS=[
 ["Samarkand","Anna, Germany","Samarkand blew us away! The organization was seamless from start to finish. Our guide made the history of Registan come alive with fascinating stories. Highly recommend this team!"],
 ["Bukhara","Michael, UK","An unforgettable trip to Bukhara! Walking through the old streets felt like stepping back in time. Everything was so well thought out, punctual, and comfortable."],
-["Chimgan","Elena, Russia","breathtaking mountain views and amazing nature! The itinerary was perfectly balanced—enough active walking and time to relax. Can’t wait to come back!"]];
+["Chimgan","Elena, Russia","Breathtaking mountain views and amazing nature! The itinerary was perfectly balanced—enough active walking and time to relax. Can’t wait to come back!"]];
 const FAQ=[
-["How does the meeting at the train station work?","Your guide meets you at the arrival point with a name sign. We send the guide’s name, phone and exact meeting place in WhatsApp before the trip."],
+["How does the meeting at the hotel work?","Your driver meets you at your with a name sign. We send the driver’s and guide's name, phone in WhatsApp before the trip."],
 ["Can I cancel the tour?","We run one-day tours only, so all bookings are non-refundable once paid."],
-["How do I pay by card from abroad?","Pay 100% online when you book. Message us on WhatsApp and we send a secure payment link."],
+["How do I pay by card from abroad?","Pay 100% online when you book. Message us on WhatsApp (or emai) and we send a secure payment link."],
 ["Can I book at the last minute?","Yes. We work 24/7 and can arrange a tour even one day before the trip."],
 ["Are entrance tickets included?","Included in the Samarkand and Bukhara day trips. Not included in walking tours or the mountain trip (cable car is extra)."],
 ["What vehicles do you use?","Air-conditioned sedans, minivans or big minivans, depending on group size and availability on the day."]];
