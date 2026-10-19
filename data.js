@@ -30,7 +30,7 @@ const REVIEWS=[
 ["Bukhara","Michael, UK","An unforgettable trip to Bukhara! Walking through the old streets felt like stepping back in time. Everything was so well thought out, punctual, and comfortable."],
 ["Chimgan","Elena, Russia","Breathtaking mountain views and amazing nature! The itinerary was perfectly balanced—enough active walking and time to relax. Can’t wait to come back!"]];
 const FAQ=[
-["How does the meeting at the hotel work?","Your driver meets you at your with a name sign. We send the driver’s and guide's name, phone in WhatsApp before the trip."],
+["How does the meeting at the hotel work?","Your driver meets you at your hotel with a name sign. We send the driver’s and guide's name, phone in WhatsApp before the trip."],
 ["Can I cancel the tour?","We run one-day tours only, so all bookings are non-refundable once paid."],
 ["How do I pay by card from abroad?","Pay 100% online when you book. Message us on WhatsApp (or emai) and we send a secure payment link."],
 ["Can I book at the last minute?","Yes. We work 24/7 and can arrange a tour even one day before the trip."],
