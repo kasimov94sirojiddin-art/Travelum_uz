@@ -32,7 +32,7 @@ const REVIEWS=[
 const FAQ=[
 ["How does the meeting at the hotel work?","Your driver meets you at your hotel with a name sign. We send the driver’s and guide's name, phone in WhatsApp before the trip."],
 ["Can I cancel the tour?","We run one-day tours only, so all bookings are non-refundable once paid."],
-["How do I pay by card from abroad?","Pay 100% online when you book. Message us on WhatsApp (or emai) and we send a secure payment link."],
+["How do I pay by card from abroad?","Pay 100% online when you book. Message us on WhatsApp (or email) and we send a secure payment link."],
 ["Can I book at the last minute?","Yes. We work 24/7 and can arrange a tour even one day before the trip."],
 ["Are entrance tickets included?","Included in the Samarkand and Bukhara day trips. Not included in walking tours or the mountain trip (cable car is extra)."],
 ["What vehicles do you use?","Air-conditioned sedans, minivans or big minivans, depending on group size and availability on the day."]];
