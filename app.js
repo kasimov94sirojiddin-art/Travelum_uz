@@ -1,5 +1,5 @@
 const $=(s,r=document)=>r.querySelector(s),pg=document.body.dataset.page;
-const PAGES=[["index.html","Home","home"],["tours.html","Tours","tours"],["guides.html","Guides","guides"],["policy.html","Policy & FAQ","policy"],["contacts.html","Contacts","contacts"]];
+const PAGES=[["index.html","Home","home"],["tours.html","Tours","tours"],["guides.html","Guides","guides"],["transfers.html","Transfers","transfers"],["policy.html","Policy & FAQ","policy"],["contacts.html","Contacts","contacts"]];
 const links=PAGES.map(p=>`<a href="${p[0]}" ${p[2]==pg?'class="on" aria-current="page"':''}>${p[1]}</a>`).join("");
 document.body.insertAdjacentHTML("afterbegin",`<header class="hd"><a class="brand" href="index.html"><b>T</b>Travelum uz</a>
 <nav class="nav">${links}</nav><a class="btn y hd-wa" href="${WA}" target="_blank" rel="noreferrer">WhatsApp</a>
@@ -36,3 +36,21 @@ if(pg=="guides")$("#walk").innerHTML=WALK.map(w=>`<article class="card"><h3>${w[
 <div class="cols"><div><h4>Included</h4><ul class="ok"><li>Tour guide</li><li>Excursions per program</li></ul></div><div><h4>Not included</h4><ul class="no"><li>Entrance tickets</li>${w[2]?"<li>Transport</li>":""}<li>Lunch</li><li>Personal expenses</li></ul></div></div>
 <div class="prices"><div class="hit"><span>Private group, 1-10 persons</span><strong>135 USD</strong></div></div></article>`).join("");
 if(pg=="policy")$("#faq").innerHTML=FAQ.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join("");
+
+if(pg=="transfers"){
+ const RG=["All",...new Set(TR.map(r=>r[0]))];let reg="All",pax=0;
+ $("#tr-veh").innerHTML=VEH.map(v=>`<div><b>${v[0]} · ${v[1]}</b><span>${v[2]}</span></div>`).join("");
+ const draw=()=>{
+  $("#tr-tabs").innerHTML=RG.map(r=>`<button class="chip${r==reg?" on":""}" data-r="${r}">${r}</button>`).join("");
+  $("#tr-pax").innerHTML=VEH.map((v,i)=>`<button class="chip${pax==i+1?" on":""}" data-p="${i+1}">${v[0]} ${v[1]}</button>`).join("");
+  let pr="",pg2="",h="";
+  TR.filter(r=>reg=="All"||r[0]==reg).forEach(r=>{const[R,G,N,P,o={}]=r;
+   if(R!=pr){h+=`<h2 class="tr-h">${R}</h2>`;pr=R;pg2=""}
+   if(G!=pg2){h+=`<h3 class="tr-g">${G}</h3>`;pg2=G}
+   const sel=pax&&P[pax-1]!=null,msg=`Hello! I need a transfer: ${N}${sel?`, ${VEH[pax-1][0]} ${VEH[pax-1][1]}, $${P[pax-1]}`:""}.`;
+   h+=`<div class="tr"><div class="tr-n"><b>${N}</b>${o.c?`<small>${o.c}</small>`:""}${o.b?`<span class="tag">Bonus: ${o.b}</span>`:""}${o.a?`<span class="tag">${o.a}</span>`:""}</div>
+<div class="tr-p">${P.map((v,i)=>`<div class="${pax==i+1?"hit":""}"><small>${VEH[i][0]} ${VEH[i][1]}</small><b>${v==null?"N/A":"$"+v}</b>${o.e&&o.e[i]?`<em>+$${o.e[i]} ${o.l}</em>`:""}</div>`).join("")}</div>
+<a class="btn y" href="${WA}?text=${encodeURIComponent(msg)}" target="_blank" rel="noreferrer">Book</a></div>`});
+  $("#tr-list").innerHTML=h};
+ $("#tr-tabs").onclick=e=>{const b=e.target.closest("[data-r]");if(b){reg=b.dataset.r;draw()}};
+ $("#tr-pax").onclick=e=>{const b=e.target.closest("[data-p]");if(b){pax=pax==+b.dataset.p?0:+b.dataset.p;draw()}};draw()}
