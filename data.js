@@ -24,7 +24,7 @@ const WALK=[
 ["Kokand","Khudoyar-Khan Palace, Regional Studies Museum, Jami Mosque, Kamol-Kazy and Norbutabiy Madrasahs.",1],
 ["Shakhrisabz","Dorus Saodat, Dor-ut Tilovat & Kok-Gumbaz Mosque, Ak-Saray Palace ruins.",1],
 ["Termez","Kokildor-Ota Khanaka, Kyrk-Kyz, Sultan Saodat, Archaeology Museum, Kara-Tepe & Fayaz-Tepe, Al-Hakim at-Termezi, Zurmala stupa.",1]];
-// ⚠️ Замените примеры отзывов на реальные (с разрешения гостей)
+// 
 const REVIEWS=[
 ["Samarkand","Anna, Germany","Samarkand blew us away! The organization was seamless from start to finish. Our guide made the history of Registan come alive with fascinating stories. Highly recommend this team!"],
 ["Bukhara","Michael, UK","An unforgettable trip to Bukhara! Walking through the old streets felt like stepping back in time. Everything was so well thought out, punctual, and comfortable."],
