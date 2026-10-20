@@ -45,7 +45,7 @@ if(pg=="home"){
 if(pg=="guides")$("#walk").innerHTML=WALK.map(w=>`<article class="card"><h3>${w[0]} — walking tour</h3><p class="meta">4-6 hours</p><p class="lead">${w[1]}</p>
 <div class="cols"><div><h4>Included</h4><ul class="ok"><li>Tour guide</li><li>Excursions per program</li></ul></div><div><h4>Not included</h4><ul class="no"><li>Entrance tickets</li>${w[2]?"<li>Transport</li>":""}<li>Lunch</li><li>Personal expenses</li></ul></div></div>
 <div class="prices"><div class="hit"><span>Private group, 1-10 persons</span><strong>135 USD</strong>${bk(gmsg(w[0]))}</div></div></article>`).join("");
-if(pg=="policy")$("#faq").innerHTML=FAQ.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join("");
+if(pg=="policy")$("#faq").innerHTML=FAQ.map(f=>`<details><summary>${f[0]}</summary><div class="ans">${f[1]}</div></details>`).join("");
 
 if(pg=="transfers"){
  const RG=["All",...new Set(TR.map(r=>r[0]))];let reg="All",pax=0;
