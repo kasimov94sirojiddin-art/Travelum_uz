@@ -30,7 +30,7 @@ const REVIEWS=[
 ["Bukhara","Michael, UK","An unforgettable trip to Bukhara! Walking through the old streets felt like stepping back in time. Everything was so well thought out, punctual, and comfortable."],
 ["Chimgan","Elena, Russia","Breathtaking mountain views and amazing nature! The itinerary was perfectly balanced—enough active walking and time to relax. Can’t wait to come back!"]];
 const FAQ=[
-["How does the meeting at the hotel work?","Your driver meets you at your hotel in Tashkent with a name sign. We send the driver's and guide’s name, phone in WhatsApp before the trip."],
+["How does the meeting at the hotel work?","Your driver/guide meets you at your hotel in Tashkent with a name sign. We send the driver's/guide’s name and phone in WhatsApp before the trip."],
 ["Can I cancel the tour?","We run one-day tours only, so all bookings are non-refundable once paid."],
 ["Can I book at the last minute?","Yes. We work 24/7 and can arrange a tour even one day before the trip."],
 ["How do I book a tour or transfer?","You can book directly on our website by selecting your option and clicking the “Book” button, which will connect you with us via WhatsApp to confirm details."],
