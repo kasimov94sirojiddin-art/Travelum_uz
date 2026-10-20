@@ -32,10 +32,24 @@ const REVIEWS=[
 const FAQ=[
 ["How does the meeting at the hotel work?","Your driver meets you at your hotel in Tashkent with a name sign. We send the driver's and guide’s name, phone in WhatsApp before the trip."],
 ["Can I cancel the tour?","We run one-day tours only, so all bookings are non-refundable once paid."],
+["Can I book at the last minute?","Yes. We work 24/7 and can arrange a tour even one day before the trip."],
+["How do I book a tour or transfer?","You can book directly on our website by selecting your option and clicking the “Book” button, which will connect you with us via WhatsApp to confirm details."],
+["How does the booking process work?","<p>The booking process is quick and simple:</p><ol><li><b>Contact Us:</b> Tap the Book button to send us a message via WhatsApp (or contact us by email).</li><li><b>Confirm Details:</b> We will discuss and confirm your itinerary, date, and group size.</li><li><b>Payment:</b> We will send you a secure payment link to complete your booking.</li><li><b>Receive Contacts:</b> You will receive the driver’s/guide’s contact details 1 day before the trip.</li></ol><p><b>Note:</b> If you make a late-night booking for the very next morning, we will send you the contacts within 1–2 hours.</p>"],
+["Are prices calculated per person or per vehicle?","For day tours (like Samarkand or Amirsay), the price is shown per person depending on group size. For private transfers, prices are per vehicle (Sedan, Minivan, or Van)."],
+["What payment methods do you accept?","We accept online card payments, bank transfers, and cash payments prior to the day of the service."],
 ["How do I pay by card from abroad?","Pay 100% online when you book. Message us on WhatsApp and we send a secure payment link."],
 ["Can I book at the last minute?","Yes. We work 24/7 and can arrange a tour even one day before the trip."],
-["Are entrance tickets included?","Included in the Samarkand and Bukhara day trips. Not included in walking tours or the mountain trip (cable car is extra)."],
-["What vehicles do you use?","Air-conditioned sedans, minivans or big minivans, depending on group size and availability on the day."]];
+["Can I cancel the tour?","We run one-day tours only, so all bookings are non-refundable once paid."],
+["How does the meeting at the hotel work?","Your driver meets you at your hotel in Tashkent with a name sign. We send the driver's and guide’s name, phone in WhatsApp before the trip."],
+["What is included in Day Trip tours (e.g., Samarkand, Bukhara, Amirsay)?","Day trips typically include round-trip transfer, a professional tour guide, and all excursions listed in the program. Entrance tickets to attractions and train/flight tickets are included where specified (e.g., Bukhara day trip)."],
+["Are meals included in the tour price?","Meals (lunch and dinner) and personal expenses are generally not included in tour packages, giving you the flexibility to choose where and what you’d like to eat."],
+["What is included in Walking Tours (guide only)?","Walking tours include a professional, licensed guide for 4–6 hours. Entrance tickets to sights, local transport, meals, and personal expenses are not included."],
+["Are entrance tickets included in walking tours (guide only) or transfers?","No, entrance tickets to historical sites are only included in selected Day Trip packages. For walking tours and transfers, tickets are paid separately on site."],
+["Do transfers include stops along the route?","Yes! Many of our intercity transfers include complimentary bonus stops, such as tasting Jizzakh Somsa on the Tashkent–Samarkand route, visiting Rabot Malik & Gijduvan on the Samarkand–Bukhara route, or visiting the Ulli Hovli Turkmen Village."],
+["Do you offer border transfers to neighboring countries?","Yes, we provide transfers to/from major border points, including Chernayavka (Zhibek Zholy), Oybek Border, Jartepa Border (Tajikistan), Farab Border, and Shavat/Dashoguz Border."],
+["What types of vehicles do you use for transfers?","<p>We offer three main vehicle categories based on group size (all air-conditioned):</p><ul><li>Sedan (1–2 passengers)</li><li>Minivan / Van (3–5 passengers)</li><li>Big Van (6–8 passengers)</li></ul>"],
+["What languages do your tour guides speak?","We offer professional guides fluent in English, Russian, and other major international languages upon request (price may change)."],
+["Is it possible to customize an itinerary?","Yes! If you want to modify a day trip or transfer route, feel free to contact us via WhatsApp to customize your itinerary."]];
 const VEH=[["Sedan","1–2 pax","Standard passenger car"],["Van","3–5 pax","Minivan"],["Van","6–8 pax","Large minivan / minibus"]];
 // [region, group, route, [sedan, van 3-5, van 6-8], {c:codes/distance, b:bonus, a:add-on, e:[extra per vehicle], l:extra label}]
 const TR=[
