@@ -15,7 +15,14 @@ const TOURS=[
  meta:["440 km · 4h by Afrosiyob high-speed train","6-7 hours in Bukhara"],
  prog:["Lyabi-Khauz Ensemble, Magoki-Attori Mosque","Chor-Minor Madrasah","Trading Domes","Ulugbek and Abdulazizkhan Madrasahs","Po-i-Kalyan Complex","Ark Citadel","Bolo-Khauz Mosque","Ismail Samani and Chashma-Ayub Mausoleums"],
  inc:["Station / airport transfers","Train ticket Tashkent → Bukhara","Flight Bukhara → Tashkent","Professional guide","Entrance tickets"],exc:["Lunch and dinner","Personal expenses"],
- prices:[[1,550,""],[2,386,""],[3,360,""],[4,325,""],[5,305,""],[6,291,""],[7,293,""],[8,285,""]]}];
+ prices:[[1,550,""],[2,386,""],[3,360,""],[4,325,""],[5,305,""],[6,291,""],[7,293,""],[8,285,""]]};
+{id:"plov",img:"assets/plov.jpg",name:"Bukhara — Plov Cooking Master Class",local:true,
+ lead:"Discover the secrets of traditional Uzbek cuisine and learn how to prepare authentic Bukhara-style plov with local cooking experts.",
+ more:"Enjoy a hands-on cooking experience where all ingredients are freshly prepared. Learn the techniques behind perfectly cooked rice and delicious, flavourful plov. The freshly prepared plov is served for lunch (or dinner for late-afternoon sessions), accompanied by fresh salads, seasonal fruits, dried fruits, traditional desserts, tea and other drinks.",
+ meta:["In Bukhara","Minimum group: 5 people"],
+ prog:["Hotel pick-up and transfer to the cooking venue","Introduction to traditional Uzbek plov","Hands-on plov cooking master class","Preparation of traditional accompaniments","Lunch or dinner featuring freshly cooked plov","Tea and refreshments"],
+ inc:["Round-trip hotel transfer","Plov cooking master class","Lunch or dinner","Salads, fresh and dried fruits, desserts","Tea and drinks"],
+ prices:[[5,82,"","5 people"],[6,75,"","6–10 people"],[11,70,"","11–15 people"],[16,58,"","16–20 people"],[21,52,"","21–30 people"]]}];
 const WALK=[
 ["Tashkent","Old City & Khazret-Imam complex, Chorsu Bazaar, Tashkent Metro ride, Amir Timur & Independence Squares, Sacred Heart Cathedral, Applied Arts Museum.",1],
 ["Samarkand","Registan Square, Siab Bazaar, Bibi Khanum Mosque, Shakhi Zinda, Gur-Emir Mausoleum.",0],
