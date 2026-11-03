@@ -11,33 +11,24 @@ document.body.insertAdjacentHTML("beforeend",`<footer class="ft"><span>© Travel
 const bg=$(".burger"),dr=$(".drawer");
 bg.onclick=()=>{const o=dr.hidden;dr.hidden=!o;bg.textContent=o?"✕":"☰";bg.setAttribute("aria-expanded",o);document.body.classList.toggle("lock",o)};
 const li=a=>a.map(x=>`<li>${x}</li>`).join("");
-const tier=(t,n)=>t.prices.find(p=>p[0]>=n)||t.prices.at(-1);
+
 const unit=(p)=>p[0]==1?`${p[1]} USD`:`${p[1]} USD /person`;
 
 /* ---- WhatsApp Book buttons ---- */
 const wa=m=>`${WA}?text=${encodeURIComponent(m)}`;
 const bk=m=>`<a class="bk" href="${wa(m)}" target="_blank" rel="noreferrer">Book</a>`;
+
 // Tours: "Hello, I want to book Samarkand day trip from Tashkent for 1 person (sedan), 507 USD."
-const tmsg=(t,p)=>{const n=p[0],v=p[2]?` (${p[2]})`:"",nm=t.name.replace(" — "," ")+" from Tashkent";
+const tmsg=(t,p)=>{const n=p[0],v=p[2]?` (${p[2]})`:"",nm=t.name.replace(" — "," ")+(t.local?"":" from Tashkent");
+ if(p[3])return `Hello, I want to book ${nm} for ${p[3]}, ${p[1]} USD per person.`;
  return `Hello, I want to book ${nm} for ${n} ${n>1?"persons":"person"}${v}, ${n>1?`${p[1]} USD per person, ${p[1]*n} USD total`:`${p[1]} USD`}.`};
 // Guides: "Hello, I want to book tour guide in Tashkent (walking tour, 1-10 persons), 135 USD."
 const gmsg=city=>`Hello, I want to book tour guide in ${city} (walking tour, private group 1-10 persons), 135 USD.`;
 
-function tourCard(t){return `<article class="card"><div class="media" style="background-image:url(${t.img})" role="img" aria-label="${t.name}"></div><h3>${t.name}</h3><p class="lead">${t.lead}</p><p class="meta">${t.meta.join(" · ")}</p>
-<div class="cols"><div><h4>Program</h4><ul>${li(t.prog)}</ul></div><div><h4>Included</h4><ul class="ok">${li(t.inc)}</ul><h4>Not included</h4><ul class="no">${li(t.exc)}</ul></div></div>
-<div class="prices" data-t="${t.id}">${t.prices.map(p=>`<div data-n="${p[0]}"><span>${p[0]} ${p[0]>1?"persons":"person"}${p[2]?" ("+p[2]+")":""}</span><strong>${unit(p)}</strong>${bk(tmsg(t,p))}</div>`).join("")}</div></article>`}
-if(pg=="tours"){
- $("#tours").innerHTML=TOURS.map(tourCard).join("");
- const sel=$("#c-tour"),out=$("#c-total"),num=$("#c-n"),rng=$("#c-r");let n=2;
- sel.innerHTML=TOURS.map(t=>`<option value="${t.id}">${t.name}</option>`).join("");
- const calc=()=>{const t=TOURS.find(x=>x.id==sel.value),max=t.prices.at(-1)[0];n=Math.min(Math.max(n,1),max);
-  rng.max=max;rng.value=n;num.textContent=n;const p=tier(t,n),tot=n==1?p[1]:p[1]*n;
-  out.innerHTML=`<small>Total for ${n} ${n>1?"people":"person"}</small><b>${tot} USD</b><small>${n>1?p[1]+" USD per person":"private tour"}${p[2]?" · "+p[2]:""}</small>`;
-  $("#c-book").href=`${WA}?text=${encodeURIComponent(`Hello! I want to book: ${t.name} for ${n} person(s). Estimated ${tot} USD.`)}`;
-  document.querySelectorAll(".prices div").forEach(d=>d.classList.toggle("hit",d.parentNode.dataset.t==t.id&&+d.dataset.n==p[0]))};
- $("#c-minus").onclick=()=>{n--;calc()};$("#c-plus").onclick=()=>{n++;calc()};
- rng.oninput=()=>{n=+rng.value;calc()};sel.onchange=()=>{n=Math.min(n,TOURS.find(x=>x.id==sel.value).prices.at(-1)[0]);calc()};calc();
- if(location.hash){const t=$(location.hash);t&&(sel.value=location.hash.slice(1),calc())}
+function tourCard(t){return `<article class="card"><div class="media" style="background-image:url(${t.img})" role="img" aria-label="${t.name}"></div><h3>${t.name}</h3><p class="lead">${t.lead}</p>${t.more?`<p>${t.more}</p>`:""}<p class="meta">${t.meta.join(" · ")}</p>
+<div class="cols"><div><h4>Program</h4><ul>${li(t.prog)}</ul></div><div><h4>Included</h4><ul class="ok">${li(t.inc)}</ul>${t.exc?`<h4>Not included</h4><ul class="no">${li(t.exc)}</ul>`:""}</div></div>
+<div class="prices" data-t="${t.id}">${t.prices.map(p=>`<div data-n="${p[0]}"><span>${p[3]||`${p[0]} ${p[0]>1?"persons":"person"}${p[2]?" ("+p[2]+")":""}`}</span><strong>${unit(p)}</strong>${bk(tmsg(t,p))}</div>`).join("")}</div></article>`}
+if(pg=="tours")$("#tours").innerHTML=TOURS.map(tourCard).join("");
 }
 if(pg=="home"){
  $("#home-tours").innerHTML=TOURS.map(t=>`<a class="card tease" href="tours.html"><div class="media" style="background-image:url(${t.img})" role="img" aria-label="${t.name}"></div><h3>${t.name}</h3><p>${t.lead}</p><p class="meta">from <b>${t.prices.at(-1)[1]} USD</b> per person</p></a>`).join("");
