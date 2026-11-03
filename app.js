@@ -11,13 +11,11 @@ document.body.insertAdjacentHTML("beforeend",`<footer class="ft"><span>© Travel
 const bg=$(".burger"),dr=$(".drawer");
 bg.onclick=()=>{const o=dr.hidden;dr.hidden=!o;bg.textContent=o?"✕":"☰";bg.setAttribute("aria-expanded",o);document.body.classList.toggle("lock",o)};
 const li=a=>a.map(x=>`<li>${x}</li>`).join("");
-
 const unit=(p)=>p[0]==1?`${p[1]} USD`:`${p[1]} USD /person`;
 
 /* ---- WhatsApp Book buttons ---- */
 const wa=m=>`${WA}?text=${encodeURIComponent(m)}`;
 const bk=m=>`<a class="bk" href="${wa(m)}" target="_blank" rel="noreferrer">Book</a>`;
-
 // Tours: "Hello, I want to book Samarkand day trip from Tashkent for 1 person (sedan), 507 USD."
 const tmsg=(t,p)=>{const n=p[0],v=p[2]?` (${p[2]})`:"",nm=t.name.replace(" — "," ")+(t.local?"":" from Tashkent");
  if(p[3])return `Hello, I want to book ${nm} for ${p[3]}, ${p[1]} USD per person.`;
@@ -27,9 +25,10 @@ const gmsg=city=>`Hello, I want to book tour guide in ${city} (walking tour, pri
 
 function tourCard(t){return `<article class="card"><div class="media" style="background-image:url(${t.img})" role="img" aria-label="${t.name}"></div><h3>${t.name}</h3><p class="lead">${t.lead}</p>${t.more?`<p>${t.more}</p>`:""}<p class="meta">${t.meta.join(" · ")}</p>
 <div class="cols"><div><h4>Program</h4><ul>${li(t.prog)}</ul></div><div><h4>Included</h4><ul class="ok">${li(t.inc)}</ul>${t.exc?`<h4>Not included</h4><ul class="no">${li(t.exc)}</ul>`:""}</div></div>
-<div class="prices" data-t="${t.id}">${t.prices.map(p=>`<div data-n="${p[0]}"><span>${p[3]||`${p[0]} ${p[0]>1?"persons":"person"}${p[2]?" ("+p[2]+")":""}`}</span><strong>${unit(p)}</strong>${bk(tmsg(t,p))}</div>`).join("")}</div></article>`}
+<div class="prices">${t.prices.map(p=>`<div><span>${p[3]||`${p[0]} ${p[0]>1?"persons":"person"}${p[2]?" ("+p[2]+")":""}`}</span><strong>${unit(p)}</strong>${bk(tmsg(t,p))}</div>`).join("")}</div></article>`}
+
 if(pg=="tours")$("#tours").innerHTML=TOURS.map(tourCard).join("");
-}
+
 if(pg=="home"){
  $("#home-tours").innerHTML=TOURS.map(t=>`<a class="card tease" href="tours.html"><div class="media" style="background-image:url(${t.img})" role="img" aria-label="${t.name}"></div><h3>${t.name}</h3><p>${t.lead}</p><p class="meta">from <b>${t.prices.at(-1)[1]} USD</b> per person</p></a>`).join("");
  $("#reviews").innerHTML=REVIEWS.map(r=>`<figure class="rev"><div class="st" aria-label="5 stars">★★★★★</div><blockquote>${r[2]}</blockquote><figcaption><b>${r[1]}</b> · ${r[0]}</figcaption></figure>`).join("")}
