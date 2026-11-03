@@ -15,14 +15,15 @@ const TOURS=[
  meta:["440 km · 4h by Afrosiyob high-speed train","6-7 hours in Bukhara"],
  prog:["Lyabi-Khauz Ensemble, Magoki-Attori Mosque","Chor-Minor Madrasah","Trading Domes","Ulugbek and Abdulazizkhan Madrasahs","Po-i-Kalyan Complex","Ark Citadel","Bolo-Khauz Mosque","Ismail Samani and Chashma-Ayub Mausoleums"],
  inc:["Station / airport transfers","Train ticket Tashkent → Bukhara","Flight Bukhara → Tashkent","Professional guide","Entrance tickets"],exc:["Lunch and dinner","Personal expenses"],
- prices:[[1,550,""],[2,386,""],[3,360,""],[4,325,""],[5,305,""],[6,291,""],[7,293,""],[8,285,""]]};
+ prices:[[1,550,""],[2,386,""],[3,360,""],[4,325,""],[5,305,""],[6,291,""],[7,293,""],[8,285,""]]},
 {id:"plov",img:"assets/plov.jpg",name:"Bukhara — Plov Cooking Master Class",local:true,
  lead:"Discover the secrets of traditional Uzbek cuisine and learn how to prepare authentic Bukhara-style plov with local cooking experts.",
  more:"Enjoy a hands-on cooking experience where all ingredients are freshly prepared. Learn the techniques behind perfectly cooked rice and delicious, flavourful plov. The freshly prepared plov is served for lunch (or dinner for late-afternoon sessions), accompanied by fresh salads, seasonal fruits, dried fruits, traditional desserts, tea and other drinks.",
  meta:["In Bukhara","Minimum group: 5 people"],
  prog:["Hotel pick-up and transfer to the cooking venue","Introduction to traditional Uzbek plov","Hands-on plov cooking master class","Preparation of traditional accompaniments","Lunch or dinner featuring freshly cooked plov","Tea and refreshments"],
  inc:["Round-trip hotel transfer","Plov cooking master class","Lunch or dinner","Salads, fresh and dried fruits, desserts","Tea and drinks"],
- prices:[[5,82,"","5 people"],[6,75,"","6–10 people"],[11,70,"","11–15 people"],[16,58,"","16–20 people"],[21,52,"","21–30 people"]]}];
+ prices:[[5,82,"","5 people"],[6,75,"","6–10 people"],[11,70,"","11–15 people"],[16,58,"","16–20 people"],[21,52,"","21–30 people"]]}
+];
 const WALK=[
 ["Tashkent","Old City & Khazret-Imam complex, Chorsu Bazaar, Tashkent Metro ride, Amir Timur & Independence Squares, Sacred Heart Cathedral, Applied Arts Museum.",1],
 ["Samarkand","Registan Square, Siab Bazaar, Bibi Khanum Mosque, Shakhi Zinda, Gur-Emir Mausoleum.",0],
@@ -65,22 +66,4 @@ const TR=[
 ["Intercity from Tashkent","Intercity transfers","Tashkent – Samarkand – Tashkent",[250,400,500],{c:"310km 4 hours"}],
 ["Intercity from Tashkent","Intercity transfers","Tashkent – Fergana Valley (2 days / 1 night)",[260,400,null],{c:"+Andijan 50 USD",e:[50,null,null],l:"Andijan"}],
 ["Intercity from Tashkent","Intercity transfers","Dostlik Border – Kokand – Tashkent (1 day)",[200,null,null]],
-["Samarkand & routes","Routes from Samarkand","Samarkand – Shahrisabz – Samarkand",[90,160,null],{c:"through Taxtakaracha pass, 90km 2 hours",b:"visit & taste Tandir-Gusht"}],
-["Samarkand & routes","Routes from Samarkand","Samarkand – Jartepa Border + round trip",[75,120,null],{e:[25,30,null],l:"additional service"}],
-["Samarkand & routes","Routes from Samarkand","Samarkand – Termez (2 days)",[360,550,650],{c:"375 km 8 hours"}],
-["Samarkand & routes","Routes from Samarkand","Samarkand – Bukhara",[170,320,400],{c:"280km 5 hours",b:"visit Rabot Malik & Gijduvan"}],
-["Samarkand & routes","Routes from Samarkand","Samarkand – Shahrisabz – Bukhara",[200,370,440],{c:"through Taxtakaracha pass"}],
-["Bukhara & desert","Regional routes","Bukhara – Gijduvan – Bukhara",[90,140,170],{c:"50 km"}],
-["Bukhara & desert","Regional routes","Bukhara – Farab Border",[110,160,190],{c:"100 km"}],
-["Bukhara & desert","Regional routes","Bukhara Sufi Tour",[130,230,290],{c:"7 Pirs / Sufi shrines"}],
-["Bukhara & desert","Regional routes","Bukhara – Khiva",[180,340,420],{c:"450 km 8 hours",b:"visit Ulli Hovli Turkmen Village"}],
-["Bukhara & desert","Multi-day yurts & desert tours via Nurata","Bukhara – Nurata – Samarkand (2 days / 1 night)",[280,440,null],{c:"175km 2h + 180km 3h"}],
-["Bukhara & desert","Multi-day yurts & desert tours via Nurata","Bukhara – Nurata – Samarkand (3 days / 2 nights)",[400,560,null],{c:"175km 2h + 180km 3h"}],
-["Khiva & Karakalpakstan","Local transfers & borders","Urgench Airport pick-up / drop-off",[35,60,70],{c:"50 minutes"}],
-["Khiva & Karakalpakstan","Local transfers & borders","Khiva Train Station pick-up / drop-off",[20,50,60]],
-["Khiva & Karakalpakstan","Local transfers & borders","Khiva – Shavat / Dashoguz Border",[80,140,180],{c:"60 km"}],
-["Khiva & Karakalpakstan","Fortresses & Nukus routes","Khiva – Ayaz-Kala & Toprak-Kala – Khiva",[120,180,220]],
-["Khiva & Karakalpakstan","Fortresses & Nukus routes","Khiva – Ayaz-Kala / Toprak-Kala – Nukus",[170,270,320],{c:"285 km 5 hours"}],
-["Khiva & Karakalpakstan","Fortresses & Nukus routes","Khiva – Nukus",[120,240,280],{c:"200km 4 hours",b:"visit Chilpyk / Shilpik Kala"}],
-["Nukus, Moynaq & Fergana","Routes","Nukus – Moynaq (Aral Sea) – Nukus",[130,280,null],{c:"200 km 3 hours"}],
-["Nukus, Moynaq & Fergana","Routes","Fergana City Tour",[95,160,null]]];
+["Samarkand & routes","Routes from Samarkand","Samarkand – Shahrisabz – Samarkand",[90,160,null],{c:"through Taxtakaracha pass, 90km 2
