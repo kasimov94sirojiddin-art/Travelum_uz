@@ -25,9 +25,10 @@ const TOURS=[
  prices:[[5,82,"","5 people"],[6,75,"","6–10 people"],[11,70,"","11–15 people"],[16,58,"","16–20 people"],[21,52,"","21–30 people"]]},
 {id:"plov-tashkent",img:"assets/plov-tashkent.jpg",name:"Tashkent — Plov Cooking Master Class",local:true,
  lead:"Discover the famous Tashkent wedding plov, known as Tuy Oshi, and learn how to prepare this traditional dish with a professional Uzbek chef.",
- meta:["3 hours","Traditional Uzbek cooking experience","Minimum 6 participants"],
+ more:"Bonus: acquaintance with the museum collection, observation of the manufacture and painting of ceramics, embroidery of suzane in the techniques of “bosma” and “Jurma”, as well as carpet weaving. Duration: 40-60 minutes.",
+ meta:["4 hours","Traditional Uzbek cooking experience","Minimum 6 participants"],
  prog:["Introduction to Uzbek plov traditions and regional varieties","Learn to cook Tashkent-style wedding plov (Tuy Oshi)","Hands-on cooking experience with a professional chef","Enjoy a traditional Uzbek meal together"],
- inc:["Professional chef and cooking master class","Round-trip hotel transfer","Two salads per person","First course (soup)","Main course: Tashkent wedding plov (Tuy Oshi)","Traditional desserts","Tea"],
+ inc:["Round-trip hotel transfer","Professional chef and cooking master class","Ceramic Museum Tour","Two salads per person","First course (soup)","Main course: Tashkent wedding plov (Tuy Oshi)","Traditional desserts","Tea"],
  prices:[[6,75,"","6–11 people"],[12,70,"","12–15 people"]]}
 ];
 const WALK=[
