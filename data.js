@@ -22,7 +22,13 @@ const TOURS=[
  meta:["In Bukhara","Minimum group: 5 people"],
  prog:["Hotel pick-up and transfer to the cooking venue","Introduction to traditional Uzbek plov","Hands-on plov cooking master class","Preparation of traditional accompaniments","Lunch or dinner featuring freshly cooked plov","Tea and refreshments"],
  inc:["Round-trip hotel transfer","Plov cooking master class","Lunch or dinner","Salads, fresh and dried fruits, desserts","Tea and drinks"],
- prices:[[5,82,"","5 people"],[6,75,"","6–10 people"],[11,70,"","11–15 people"],[16,58,"","16–20 people"],[21,52,"","21–30 people"]]}
+ prices:[[5,82,"","5 people"],[6,75,"","6–10 people"],[11,70,"","11–15 people"],[16,58,"","16–20 people"],[21,52,"","21–30 people"]]},
+{id:"plov-tashkent",img:"assets/plov-tashkent.jpg",name:"Tashkent — Plov Cooking Master Class",local:true,
+ lead:"Discover the famous Tashkent wedding plov, known as Tuy Oshi, and learn how to prepare this traditional dish with a professional Uzbek chef.",
+ meta:["3 hours","Traditional Uzbek cooking experience","Minimum 6 participants"],
+ prog:["Introduction to Uzbek plov traditions and regional varieties","Learn to cook Tashkent-style wedding plov (Tuy Oshi)","Hands-on cooking experience with a professional chef","Enjoy a traditional Uzbek meal together"],
+ inc:["Professional chef and cooking master class","Round-trip hotel transfer","Two salads per person","First course (soup)","Main course: Tashkent wedding plov (Tuy Oshi)","Traditional desserts","Tea"],
+ prices:[[6,75,"","6–11 people"],[12,70,"","12–15 people"]]}
 ];
 const WALK=[
 ["Tashkent","Old City & Khazret-Imam complex, Chorsu Bazaar, Tashkent Metro ride, Amir Timur & Independence Squares, Sacred Heart Cathedral, Applied Arts Museum.",1],
@@ -44,7 +50,7 @@ const FAQ=[
 ["How do I book a tour or transfer?","You can book directly on our website by selecting your option and clicking the “Book” button, which will connect you with us via WhatsApp to confirm details."],
 ["How does the booking process work?","<p>The booking process is quick and simple:</p><ol><li><b>Contact Us:</b> Tap the Book button to send us a message via WhatsApp (or contact us by email).</li><li><b>Confirm Details:</b> We will discuss and confirm your itinerary, date, and group size.</li><li><b>Payment:</b> We will send you a secure payment link to complete your booking.</li><li><b>Receive Contacts:</b> You will receive the driver’s/guide’s contact details 1 day before the trip.</li></ol><p><b>Note:</b> If you make a late-night booking for the very next morning, we will send you the contacts within 1–2 hours.</p>"],
 ["Are prices calculated per person or per vehicle?","For day tours (like Samarkand or Amirsay), the price is shown per person depending on group size. For private transfers, prices are per vehicle (Sedan, Minivan, or Van)."],
-["What payment methods do you accept?","We accept online card payments VISA/MASTERCARD/GOOGLE PAY, bank transfers, and cash payments prior to the day of the service."],
+["What payment methods do you accept?","We accept online card payments, bank transfers, and cash payments prior to the day of the service."],
 ["How do I pay by card from abroad?","Pay 100% online when you book. Message us on WhatsApp and we send a secure payment link."],
 ["What is included in Day Trip tours (e.g., Samarkand, Bukhara, Amirsay)?","Day trips typically include round-trip transfer, a professional tour guide, and all excursions listed in the program. Entrance tickets to attractions and train/flight tickets are included where specified (e.g., Bukhara day trip)."],
 ["Are meals included in the tour price?","Meals (lunch and dinner) and personal expenses are generally not included in tour packages, giving you the flexibility to choose where and what you’d like to eat."],
