@@ -1,7 +1,7 @@
 const WA="https://wa.me/998886473030",PH="+998 88 647 30 30",MAIL="kasimov94sirojiddin@gmail.com",
 ORG="https://orginfo.uz/en/organization/49abafc1b90f/";
 const TOURS=[
-{id:"samarkand",img:"assets/samarkand.jpg",name:"Samarkand — day trip",lead:"City of great empires, beautiful architecture and eastern atmosphere.",
+{id:"samarkand",img:"assets/samarkand.jpg",name:"Samarkand — day trip from Tashkent",lead:"City of great empires, beautiful architecture and eastern atmosphere.",
  meta:["310 km · 4h from Tashkent","5-6 hours in Samarkand"],
  prog:["Jizzakh somsa","Gur-Emir Mausoleum","Registan Square","Bibi-Khanym Mosque","Hazrat Khizr Mosque with panoramic view","Shahi-Zinda Necropolis","Siab Bazaar","Konigil"],
  inc:["Round-trip transfer","Tour guide","Excursions per program","Entrance tickets","Lunch (Samarkand osh)"],exc:["Personal expenses", "Entrance fee Konigil (1-2 usd)"],
@@ -11,7 +11,7 @@ const TOURS=[
  prog:["Amirsoy resort and ascent to Kumbel Peak (2,290 m)","Views of Big and Small Chimgan","Chimgan gorges, horseback rides","Mountain serpentine above the “Uzbek Sea”","Blue shores of Charvak Reservoir","Petroglyphs and centuries-old plane trees"],
  inc:["Round-trip transfer","Excursions per program"],exc:["Cable car: $10-$18 depending on day and age","Lunch","Horse riding","Tour guide"],
  prices:[[1,110,"sedan"],[2,61,"sedan"],[3,63,"minivan"],[4,47,"minivan"],[5,38,"minivan"],[6,33,"minivan"],[7,45,"minivan"],[8,40,"minivan"],[15,25,"big minivan"],[18,20,"big minivan"]]},
-{id:"bukhara",img:"assets/bukhara.jpg",name:"Bukhara — day trip",lead:"Silk Road city of medieval mosques, minarets and covered trading domes.",
+{id:"bukhara",img:"assets/bukhara.jpg",name:"Bukhara — day trip from Tashkent",lead:"Silk Road city of medieval mosques, minarets and covered trading domes.",
  meta:["440 km · 4h by Afrosiyob high-speed train","6-7 hours in Bukhara"],
  prog:["Lyabi-Khauz Ensemble, Magoki-Attori Mosque","Chor-Minor Madrasah","Trading Domes","Ulugbek and Abdulazizkhan Madrasahs","Po-i-Kalyan Complex","Ark Citadel","Bolo-Khauz Mosque","Ismail Samani and Chashma-Ayub Mausoleums"],
  inc:["Station / airport transfers","Train ticket Tashkent → Bukhara","Flight Bukhara → Tashkent","Professional guide","Entrance tickets"],exc:["Lunch and dinner","Personal expenses"],
