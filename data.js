@@ -9,7 +9,7 @@ const TOURS=[
 {id:"mountains",img:"assets/amirsay.webp",name:"Amirsay, Chimgan, Charvak — day trip",lead:"Tien Shan peaks, pine forests and the mirror-like Charvak reservoir.",
  meta:["80 km · 2h from Tashkent","8-10 hours"],
  prog:["Amirsoy resort and ascent to Kumbel Peak (2,290 m)","Views of Big and Small Chimgan","Chimgan gorges, horseback rides","Mountain serpentine above the “Uzbek Sea”","Blue shores of Charvak Reservoir","Petroglyphs and centuries-old plane trees"],
- inc:["Round-trip transfer","Tour guide","Excursions per program"],exc:["Cable car: $10-$18 depending on day and age","Lunch","Horse riding"],
+ inc:["Round-trip transfer","Excursions per program"],exc:["Cable car: $10-$18 depending on day and age","Lunch","Horse riding","Tour guide"],
  prices:[[1,110,"sedan"],[2,61,"sedan"],[3,63,"minivan"],[4,47,"minivan"],[5,38,"minivan"],[6,33,"minivan"],[7,45,"minivan"],[8,40,"minivan"],[15,25,"big minivan"],[18,20,"big minivan"]]},
 {id:"bukhara",img:"assets/bukhara.jpg",name:"Bukhara — day trip",lead:"Silk Road city of medieval mosques, minarets and covered trading domes.",
  meta:["440 km · 4h by Afrosiyob high-speed train","6-7 hours in Bukhara"],
