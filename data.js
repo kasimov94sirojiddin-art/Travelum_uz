@@ -19,7 +19,7 @@ const TOURS=[
 {id:"plov",img:"assets/plov.jpg",name:"Bukhara — Plov Cooking Master Class",local:true,
  lead:"Discover the secrets of traditional Uzbek cuisine and learn how to prepare authentic Bukhara-style plov with local cooking experts.",
  more:"Enjoy a hands-on cooking experience where all ingredients are freshly prepared. Learn the techniques behind perfectly cooked rice and delicious, flavourful plov. The freshly prepared plov is served for lunch (or dinner for late-afternoon sessions), accompanied by fresh salads, seasonal fruits, dried fruits, traditional desserts, tea and other drinks.",
- meta:["In Bukhara","Minimum group: 5 people"],
+ meta:["3 hours","Traditional Uzbek cooking experience","Minimum 5 participants"],
  prog:["Hotel pick-up and transfer to the cooking venue","Introduction to traditional Uzbek plov","Hands-on plov cooking master class","Preparation of traditional accompaniments","Lunch or dinner featuring freshly cooked plov","Tea and refreshments"],
  inc:["Round-trip hotel transfer","Plov cooking master class","Lunch or dinner","Salads, fresh and dried fruits, desserts","Tea and drinks"],
  prices:[[5,82,"","5 people"],[6,75,"","6–10 people"],[11,70,"","11–15 people"],[16,58,"","16–20 people"],[21,52,"","21–30 people"]]},
