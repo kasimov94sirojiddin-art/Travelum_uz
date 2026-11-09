@@ -1,12 +1,12 @@
 const WA="https://wa.me/998886473030",PH="+998 88 647 30 30",MAIL="kasimov94sirojiddin@gmail.com",
 ORG="https://orginfo.uz/en/organization/49abafc1b90f/";
 const TOURS=[
-{id:"samarkand",img:"assets/samarkand.jpg",name:"Samarkand — day trip from Tashkent",lead:"City of great empires, beautiful architecture and eastern atmosphere.",
+{id:"samarkand",img:"assets/samarkand.jpg",name:"Samarkand — day trip from Tashkent",lead:"City of great empires, beautiful architecture and eastern atmosphere. Your driver will pick you up from your hotel in Tashkent and drop you off back at the same hotel after the tour.",
  meta:["310 km · 4h from Tashkent","5-6 hours in Samarkand"],
  prog:["Jizzakh somsa","Gur-Emir Mausoleum","Registan Square","Bibi-Khanym Mosque","Hazrat Khizr Mosque with panoramic view","Shahi-Zinda Necropolis","Siab Bazaar","Konigil"],
  inc:["Round-trip transfer","Tour guide","Excursions per program","Entrance tickets","Lunch (Samarkand osh)"],exc:["Personal expenses", "Entrance fee Konigil (1-2 usd)"],
  prices:[[1,454,"sedan"],[2,264,"sedan"],[3,261,"minivan"],[4,208,"minivan"],[5,180,"minivan"],[6,163,"minivan"],[7,164,"minivan"],[8,156,"minivan"],[10,140,"minivan"],[15,118,"minivan"]]},
-{id:"mountains",img:"assets/amirsay.webp",name:"Amirsay, Chimgan, Charvak — day trip",lead:"Tien Shan peaks, pine forests and the mirror-like Charvak reservoir.",
+{id:"mountains",img:"assets/amirsay.webp",name:"Amirsay, Chimgan, Charvak — day trip",lead:"Tien Shan peaks, pine forests and the mirror-like Charvak reservoir. Your driver will pick you up from your hotel and drop you off back at the same hotel after the tour.",
  meta:["80 km · 2h from Tashkent","8-10 hours"],
  prog:["Amirsoy resort and ascent to Kumbel Peak (2,290 m)","Views of Big and Small Chimgan","Chimgan gorges, horseback rides","Mountain serpentine above the “Uzbek Sea”","Blue shores of Charvak Reservoir","Petroglyphs and centuries-old plane trees"],
  inc:["Round-trip transfer","Excursions per program"],exc:["Cable car: $10-$18 depending on day and age","Lunch","Horse riding","Tour guide"],
